@@ -188,7 +188,7 @@ if ($this->params->get('show_category_title') && !$this->params->get('show_page_
 										<?php echo $price->event->beforeDisplayContent; ?><?php echo $price->introtext; ?><?php echo $price->event->afterDisplayContent; ?>
 
 										<div class="plan-price">
-											<span class="h1"><sup>€</sup><?php echo $pricefields['price']->value; ?></span>
+											<span class="h1"><sup><?php echo $pricefields['currency']->value; ?></sup><?php echo $pricefields['price']->value; ?></span>
 											<sub><span class="underline"><?php echo $this->escape($category->title); ?></span><span>payment</span></sub>
 										</div>
 									</div>
